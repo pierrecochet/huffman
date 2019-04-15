@@ -87,6 +87,13 @@ public class Huffman implements Comparator<Letter> {
         return -1;
     }
 
+    /**
+     *
+     *
+     *
+     * @param l
+     * @return
+     */
     public ArrayList<Node> initiateNodes(ArrayList<Letter> l){
         ArrayList<Node> nodeList = new ArrayList<Node>();
         for(int i=0; i<l.size();i++){
@@ -95,9 +102,10 @@ public class Huffman implements Comparator<Letter> {
         return nodeList;
     }
 
-//snippet from : https://howtodoinjava.com/sort/collections-sort/
 
+//snippet from : https://howtodoinjava.com/sort/collections-sort/
     /**
+     *
      *
      * @param l
      * @return
@@ -129,6 +137,8 @@ public class Huffman implements Comparator<Letter> {
 
     /**
      *
+     *
+     *
      * @param n
      * @return
      */
@@ -151,6 +161,39 @@ public class Huffman implements Comparator<Letter> {
 
         return null;
     }
+
+
+    public void createTree(ArrayList<Node> n){
+        ArrayList<Node> templist = n;
+        ArrayList<Node> tree = new ArrayList<Node>();
+        int min;
+        int minI1;
+        int minI2;
+        while(templist.size()!=0){
+            min=1000000000;
+            minI1=-1;
+            minI2=-1;
+            for(int i = 0;i<templist.size();i++){
+                if(templist.get(i).getLetter().getFreq()<=min){
+                    minI1=i;
+                }
+            }
+            for(int i = 0;i<templist.size();i++){
+                if(templist.get(i).getLetter().getFreq()<=min && i!=minI1){
+                    minI2=i;
+                }
+            }
+            tree.add(n.get(minI1));
+            tree.add(n.get(minI2));
+            templist.remove(minI1);
+            templist.remove(minI1);
+            templist.add(0,new Node(new Letter(n.get(minI1).getLetter().getFreq()+n.get(minI2).getLetter().getFreq(),'f'),n.get(minI1),n.get(minI2)));
+        }
+
+    }
+
+
+
 
     @Override
     public int compare(Letter o1, Letter o2) {
