@@ -27,6 +27,7 @@ public class Node {
         this.right = right;
     }
 
+
     public Node(Letter letter,Node left, Node right){
         this.left = left;
         this.right  = right;

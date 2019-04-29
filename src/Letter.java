@@ -1,6 +1,7 @@
 public class Letter {
     int freq;
     Character label;
+    String codeH;
 
     public Letter(int freq, Character label){
         this.freq = freq;
@@ -26,5 +27,12 @@ public class Letter {
         this.freq += 1;
     }
 
+    public String getCodeH() {
+        return codeH;
+    }
+
+    public void setCodeH(String codeH) {
+        this.codeH = codeH;
+    }
 
 }
