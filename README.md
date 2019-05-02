@@ -10,8 +10,14 @@ Si vous n'utilisez pas IntelliJ je vous invite donc à ne télécharger qu'uniqu
 ## Introduction
 **Compression**
 
-La réalisation de ce projet fut décomposé en 3 étapes
-- Détermination de l’alphabet et des fréquences
-- Construction de l’arbre
+Cette partie fut décomposée en 3 étapes :
+- Détermination de l’alphabet et des fréquences à partir du texte
+- Construction de l’arbre de Huffman
 - Codage du texte
 
+**Décompression**
+
+Il va de même pour cette partie :
+- Determination de l'alphabet et des fréquences à partir d'un fichier de fréquences
+- Construction de l'arbre de Huffman
+- Décodage du texte 
