@@ -21,3 +21,12 @@ Il va de même pour cette partie :
 - Determination de l'alphabet et des fréquences à partir d'un fichier de fréquences
 - Construction de l'arbre de Huffman
 - Décodage du texte 
+
+## Tester le code
+
+Pour tester le code il suffit de rentrer le liens de sont fichier dans le main à la ligne 3 pour compresser.
+
+Ou rentrer le lien de son fichier de fréquence à la ligne 6 puis son fichier à décompresser à la ligne 7
+
+Si vous rencontrez un quelconque soucis quant à l'importation du dépôt ou son utilisation vous pouvez me contacter ici :
+pierre.cochet@etu.univ-smb.fr
