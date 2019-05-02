@@ -24,11 +24,26 @@ Il va de même pour cette partie :
 
 ## Tester le code
 
-Pour tester le code il suffit de rentrer le liens de sont fichier dans le main à la ligne 3 pour compresser.
+```
+public class Main {
+    public static void main(String[] args)throws IOException {
+        Huffman huff = new Huffman();
+        //zip
+        File file = new File("src/data/test.txt");
+        huff.zip(file);
+        //unzip
+        File f1 = new File("src/data/compressedFile.txt");
+        File freqFile = new File("src/data/freq.txt");
 
-Ou rentrer le lien de son fichier de fréquence à la ligne 6 puis son fichier à décompresser à la ligne 7
+        huff.unzipFile(f1,freqFile);
+    }
+```
+Pour compresser un fichier il suffit de rentrer le chemin pointant sur votre fichier en paramètre du premier new File()
+
+Pour décompresser un fichier il faut de rentrer le chemin pointant sur votre fichier de fréquences en paramètre du deuxièmes new File(), puis de votre fichier à décompresser dans le troisième new File().
 
 ## Contact :
 
 Si vous rencontrez un quelconque soucis quant à l'importation du dépôt ou son utilisation vous pouvez me contacter ici :
+
 pierre.cochet@etu.univ-smb.fr
