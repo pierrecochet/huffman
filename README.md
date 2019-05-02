@@ -28,6 +28,7 @@ Pour tester le code il suffit de rentrer le liens de sont fichier dans le main �
 
 Ou rentrer le lien de son fichier de fréquence à la ligne 6 puis son fichier à décompresser à la ligne 7
 
-Contact :
+## Contact :
+
 Si vous rencontrez un quelconque soucis quant à l'importation du dépôt ou son utilisation vous pouvez me contacter ici :
 pierre.cochet@etu.univ-smb.fr
