@@ -38,6 +38,7 @@ public class Main {
         huff.unzipFile(f1,freqFile);
     }
 ```
+Tout ce passe dans la classe Main pour tester le code
 Pour compresser un fichier il suffit de rentrer le chemin pointant sur votre fichier en paramètre du premier new File()
 
 Pour décompresser un fichier il faut de rentrer le chemin pointant sur votre fichier de fréquences en paramètre du deuxièmes new File(), puis de votre fichier à décompresser dans le troisième new File().
