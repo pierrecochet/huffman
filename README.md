@@ -48,4 +48,3 @@ Pour décompresser un fichier il faut de rentrer le chemin pointant sur votre fi
 
 Si vous rencontrez un quelconque soucis quant à l'importation du dépôt ou son utilisation vous pouvez me contacter ici :
 
-pierre.cochet@etu.univ-smb.fr
