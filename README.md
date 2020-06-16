@@ -44,7 +44,3 @@ Pour compresser un fichier il suffit de rentrer le chemin pointant sur votre fic
 
 Pour décompresser un fichier il faut de rentrer le chemin pointant sur votre fichier de fréquences en paramètre du deuxièmes new File(), puis de votre fichier à décompresser dans le troisième new File().
 
-## Contact :
-
-Si vous rencontrez un quelconque soucis quant à l'importation du dépôt ou son utilisation vous pouvez me contacter ici :
-
